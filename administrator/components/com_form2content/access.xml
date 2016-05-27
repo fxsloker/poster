@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_form2content">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="form2content.trash" title="COM_FORM2CONTENT_ACCESS_TRASH" description="COM_FORM2CONTENT_ACCESS_TRASH_COMPONENT_DESC" />
+		<action name="form2content.trash.own" title="COM_FORM2CONTENT_ACCESS_TRASH_OWN" description="COM_FORM2CONTENT_ACCESS_TRASH_OWN_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="form2content.delete.own" title="COM_FORM2CONTENT_ACCESS_DELETE_OWN" description="COM_FORM2CONTENT_ACCESS_DELETE_OWN_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		<action name="form2content.edit.state.own" title="COM_FORM2CONTENT_ACCESS_EDITSTATE_OWN" description="COM_FORM2CONTENT_ACCESS_EDITSTATE_OWN_COMPONENT_DESC" />
+	</section>
+	<section name="project">
+		<action name="core.create" title="JACTION_CREATE" description="COM_FORM2CONTENT_ACCESS_CREATE_PROJECT_DESC" />
+		<action name="form2content.trash" title="COM_FORM2CONTENT_ACCESS_TRASH" description="COM_FORM2CONTENT_ACCESS_TRASH_PROJECT_DESC" />
+		<action name="form2content.trash.own" title="COM_FORM2CONTENT_ACCESS_TRASH_OWN" description="COM_FORM2CONTENT_ACCESS_TRASH_OWN_PROJECT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_FORM2CONTENT_ACCESS_DELETE_PROJECT_DESC" />
+		<action name="form2content.delete.own" title="COM_FORM2CONTENT_ACCESS_DELETE_OWN" description="COM_FORM2CONTENT_ACCESS_DELETE_OWN_PROJECT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_FORM2CONTENT_ACCESS_EDIT_PROJECT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_FORM2CONTENT_ACCESS_EDITSTATE_PROJECT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="COM_FORM2CONTENT_EDITOWN_PROJECT_DESC" />
+		<action name="form2content.edit.state.own" title="COM_FORM2CONTENT_ACCESS_EDITSTATE_OWN" description="COM_FORM2CONTENT_ACCESS_EDITSTATE_OWN_PROJECT_DESC" />
+	</section>	
+	<section name="form">
+		<action name="form2content.trash" title="COM_FORM2CONTENT_ACCESS_TRASH" description="COM_FORM2CONTENT_ACCESS_TRASH_FORM_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_FORM2CONTENT_ACCESS_DELETE_FORM_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_FORM2CONTENT_ACCESS_EDIT_FORM_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_FORM2CONTENT_ACCESS_EDITSTATE_FORM_DESC" />
+	</section>
+</access>

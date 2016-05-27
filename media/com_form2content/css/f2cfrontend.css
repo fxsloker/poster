@@ -1,0 +1,185 @@
+a.jgrid:hover {	text-decoration: none;}
+
+.jgrid span.state 
+{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+.jgrid span.text 		{ display:none; }
+.jgrid span.publish		{ background-image: url(../../../media/com_form2content/images/tick.png); }
+.jgrid span.unpublish	{ background-image: url(../../../media/com_form2content/images/publish_x.png); }
+.jgrid span.published	{ background-image: url(../../../media/com_form2content/images/publish_g.png); }
+.jgrid span.expired		{ background-image: url(../../../media/com_form2content/images/publish_r.png); }
+.jgrid span.pending		{ background-image: url(../../../media/com_form2content/images/publish_y.png); }
+.jgrid span.downarrow	{ background-image: url(../../../media/com_form2content/images/downarrow.png); }
+.jgrid span.uparrow		{ background-image: url(../../../media/com_form2content/images/uparrow.png); }
+
+input.text-area-order 
+{
+	text-align: center;
+	margin-right: 5px;
+}
+
+table.adminlist {
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #f3f3f3;
+	color: #666;
+}
+
+table.adminlist td,
+table.adminlist th {
+	padding: 4px;
+}
+
+table.adminlist td {padding-left: 8px;}
+
+table.adminlist thead th {
+	text-align: center;
+	background: #f7f7f7;
+	color: #666;
+	border-bottom: 1px solid #CCC;
+	border-left: 1px solid #fff;
+}
+
+table.adminlist thead th.left {
+	text-align: left;
+}
+
+table.adminlist thead a:hover {
+	text-decoration: none;
+}
+
+table.adminlist thead th img {
+	vertical-align: middle;
+	padding-left: 3px;
+}
+
+table.adminlist tbody th {
+	font-weight: bold;
+}
+
+table.adminlist tbody tr {
+	background-color: #fff;
+	text-align: left;
+}
+
+table.adminlist tbody tr.row0:hover td,
+table.adminlist tbody tr.row1:hover td	{
+	background-color: #e8f6fe;
+}
+
+table.adminlist tbody tr td {
+	background: #fff;
+	border: 1px solid #fff;
+}
+
+table.adminlist tbody tr.row1 td {
+	background: #f0f0f0;
+	border-top: 1px solid #FFF;
+}
+
+table.adminlist tfoot tr {
+	text-align: center;
+	color: #333;
+}
+
+table.adminlist tfoot td,table.adminlist tfoot th {
+	background-color: #f7f7f7;
+	border-top: 1px solid #999;
+	text-align: center;
+}
+
+table.adminlist td.order {
+	text-align: center;
+	white-space: nowrap;
+	width: 200px;
+}
+
+table.adminlist td.order span {
+	float: left;
+	width: 20px;
+	text-align: center;
+	background-repeat: no-repeat;
+	height: 13px;
+}
+
+table.adminlist .pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0 auto;
+}
+
+/* Tree indentation & nesting - Up to 10 levels deep so don't go crazy :) */
+table.adminlist td.indent-4 	{	padding-left: 4px;		}
+table.adminlist td.indent-19 	{	padding-left: 19px;		}
+table.adminlist td.indent-34 	{	padding-left: 34px;		}
+table.adminlist td.indent-49 	{	padding-left: 49px;		}
+table.adminlist td.indent-64 	{	padding-left: 64px;		}
+table.adminlist td.indent-79 	{	padding-left: 79px;		}
+table.adminlist td.indent-94 	{	padding-left: 94px;		}
+table.adminlist td.indent-109 	{	padding-left: 109px;	}
+table.adminlist td.indent-124 	{	padding-left: 124px;	}
+table.adminlist td.indent-139 	{	padding-left: 139px;	}
+
+table.adminlist tr td.btns a {
+	text-decoration: underline;
+}
+
+table.adminlist td.order 
+{
+	text-align: center;
+	white-space: nowrap;
+	width: 200px;
+}
+
+table.adminlist td.order span 
+{
+	float: left;
+	width: 20px;
+	text-align: center;
+	background-repeat: no-repeat;
+	height: 13px;
+}
+
+a.saveorder 
+{
+	width: 16px;
+	height: 16px;
+	display:block;
+	overflow: hidden;
+	background: url(../../../media/com_form2content/images/filesave.png) no-repeat;
+	float:right;
+	margin-right: 8px;
+}
+
+a.saveorder.inactive 
+{
+	background-position: 0px -16px;
+}
+
+table.adminform tr
+{
+	border: 0px;
+}
+
+table.adminform td
+{
+	padding: 3px;
+	border: 0px;
+}
+
+.fltlft		{float: left;}
+
+.button2-left .blank a,
+.button2-left a,
+{
+	background:#eee;
+	padding:4px !important;
+	margin:0 !important;
+	line-height:1.2em; border:solid 1px #ddd;
+	font-weight:bold; text-decoration:none;
+	margin-top:0px !important
+	color: #ff0000 !important
+}

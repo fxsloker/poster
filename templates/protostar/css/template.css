@@ -1,0 +1,520 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+    background: #7cc04b none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.row::before, .row::after {
+    content: " ";
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
+
+body {
+    color: #333333;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+a, a:visited, a b {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body, td, th, input, textarea, select, a {
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+    text-rendering: optimizelegibility;
+}
+
+input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="email"]::-moz-placeholder {
+    color: #ababab;
+    opacity: 1;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    color: #555555;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 1.42857;
+    padding: 4px 6px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+#signup input {
+    -moz-appearance: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    overflow: visible;
+    padding: 4px 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    min-height: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+#header {
+    min-height: 90px;
+    position: relative;
+    z-index: 9;
+}
+
+.container {
+    background: #000000 none repeat scroll 0 0;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+}
+
+
+#header #logo {
+    padding: 24px 0;
+    width: 300px;
+}
+
+#content {
+    margin-bottom: 25px;
+    min-height: 400px;
+}
+
+.row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+}
+.row-fluid .span12 {
+    width: 100%;
+}
+.row-fluid [class*="span"] {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-left: 2.12766%;
+    min-height: 30px;
+    width: 100%;
+}
+.span12 {
+    width: 940px;
+}
+[class*="span"] {
+    float: left;
+    margin-left: 20px;
+    min-height: 1px;
+}
+
+.row-fluid::before, .row-fluid::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.row-fluid::after {
+    clear: both;
+}
+.row-fluid::before, .row-fluid::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.row-fluid {
+    width: 100%;
+}
+
+#columns .container {
+	background: #fff;
+}
+
+.leftSideContentNarrow {
+    width: 730px;
+    float: left;
+}
+
+.rightSideBarWide {
+    width: 400px;
+    float: right;
+}
+
+div.viewSpaceImage {
+    clear: left;
+    float: left;
+    left: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+img.viewImage {
+    display: block;
+    left: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.spaceDetails {
+    width: 638px;
+}
+
+.header-1 {
+    font-weight: 200;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 16px 0;
+    text-rendering: optimizelegibility;
+}
+
+.header-6 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.whiteCard {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.whiteCard .photo {
+    background-color: #000000;
+    position: relative;
+    text-align: center;
+    width: 550px;
+    min-height: 250px;
+}
+
+.whiteCard .photoMeta {
+    left: 550px;
+    width: 385px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.whiteCard .photoMeta .uploader, .whiteCard .photoMeta .photoInfo {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.content-row {
+    border-top: 1px solid #e6e6e6;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.profile-header {
+    background: #888888 none repeat scroll 0 0;
+    margin-bottom: 20px;
+    position: relative;    
+    height: 249px;
+    overflow: hidden;
+}
+
+.profile-header .profile-pic-container {
+    bottom: 15px;
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+}
+
+.profile-header .profile-pic-border {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    bottom: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    display: block;
+    height: 177px;
+    left: 0;
+    margin: 0 16px;
+    position: absolute;
+    width: 177px;
+}
+
+.profile-header .profile-pic-border img {
+    height: 173px;
+    width: 173px;
+}
+
+.profile-header img.cover-image {
+    position: absolute;
+    width: 100%;
+}
+
+.profile-header .custom-cover + .profile-info {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    background-repeat: repeat-x;
+    bottom: 0;
+    height: 152px;
+    left: 0;
+    margin-bottom: 53px;
+    padding-left: 225px;
+    position: absolute;
+    right: 0;
+}
+
+.profile-header .profile-info .profile-title {
+    padding-right: 380px;
+    padding-top: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profile-header .profile-info .profile-full-name {
+    font-size: 29px;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.profile-pro-reviews {
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.pro-review-string {
+    color: #fff;
+    border-left: 1px solid #ffffff;
+    margin-left: 0;
+    padding-left: 8px;
+}
+
+.profile-header .change-cover-photo {
+    bottom: 166px;
+    left: 225px;
+    position: absolute;
+    text-align: right;
+}
+
+.profile-header #changeCoverPhoto {
+    background: #000000 none repeat scroll 0 0;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.8;
+    padding: 0 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 0;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.profile-header .profile-pro-actions {
+    bottom: 80px;
+    height: 80px;
+    position: absolute;
+    right: 40px;
+    text-align: right;
+}
+
+.profile-header .profile-pro-actions .profile-action-button {
+    font-size: 16px;
+    padding: 10px 20px 10px 16px;
+    margin-left: 10px;
+    background: #f1f2f3 none repeat scroll 0 0;
+    color: #666666;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    line-height: 20px;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.profile-header .profile-view-link {
+    bottom: 0;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    font-weight: 500;
+}
+
+.text-dt-s {
+    font-size: 13px;
+}
+
+.icon-wrap {
+    white-space: nowrap;
+}
+
+.profile-view-link a {
+    color: #fff;
+}
+
+#signup {
+    width: 675px;
+    box-shadow: 1.5px 3.33px 13px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    position: relative;
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.btn.large {
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 22px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn.primary {
+    background: #55a32a none repeat scroll 0 0;
+    border: 1px solid #55a32a;
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background: #3d8901 none repeat scroll 0 0;
+    border: 1px solid #3d8901;
+    color: #ffffff;
+}
+
+#sign_up_btn {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    overflow: visible;
+    padding: 4px 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#signup .divider {
+    border-left: 1px solid #e7e7e7;
+    height: 254px;
+    left: 14px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 49px;
+    width: 1px;
+}
+
+.facebook-signup {
+    margin-top: 46px;
+    padding-left: 48px;
+    text-align: center;
+}
+
+#emailSignupForm {
+    width: 265px;
+}
+
+.facebook-signup .fb-title {
+    margin: 24px auto;
+    text-align: left;
+    width: 244px;
+}
+
+#signup #body {
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+}
+
+#signup #header_signup {
+    background: #f0f0f0 none repeat scroll 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.auth-btn {
+    display: inline-block;
+    width: 250px;
+    font-size: 16px;
+    height: 40px;
+    padding: 9px 16px;
+    text-align: left;
+}
+
+.auth-btn--google {
+    border: 1px solid #cccccc;
+}
+.mbl {
+    margin-bottom: 16px;
+}

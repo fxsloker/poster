@@ -1,0 +1,31 @@
+.joms-page {
+    background: $scss-color-secondary-background;
+    padding: ms();
+    position: relative;
+    .joms-module__wrapper & {
+        padding: 0;
+    }
+}
+
+.joms-page__title {
+    color: $page-title-color;
+    margin-bottom: ms(1);
+}
+
+.joms-page--search {
+    display: none;
+    @include media('medium') {
+        display: block;
+    }
+}
+
+.joms-page--search__results {
+	.joms-list__search {
+		.joms-list__utilities {
+			display: block;
+            @include media('medium') {
+                display: none;
+            }
+		}
+	}
+}

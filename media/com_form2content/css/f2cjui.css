@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "IcoMoon";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../../media/jui/fonts/IcoMoon.eot?#iefix") format("embedded-opentype"), url("../../../media/jui/fonts/IcoMoon.svg#IcoMoon") format("svg"), url("../../../media/jui/fonts/IcoMoon.woff") format("woff"), url("../../../media/jui/fonts/IcoMoon.ttf") format("truetype");
+}
+[data-icon]:before {
+    content: attr(data-icon);
+    font-family: 'IcoMoon';
+}
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    width: 14px;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: 'IcoMoon';
+    font-style: normal;
+}
+
+.icon-asterisk:before, .icon-star-empty:before {
+    content: "@";
+}
+
+.icon-featured:before, .icon-star:before {
+    content: "B";
+}
+
+.icon-publish:before, .icon-save:before, .icon-ok:before, .icon-checkmark:before {
+    content: "G";
+}
+.icon-unpublish:before, .icon-trash:before, .icon-cancel:before {
+    content: "J";
+}

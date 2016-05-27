@@ -1,0 +1,48 @@
+$primary-width:  100% / $ms-ratio;
+$secondary-width: 100% - $primary-width;
+$layout-gap: $primary-width - $secondary-width;
+
+%row {
+    @extend %clearfix;
+}
+
+%column {
+    float:left;
+    display:block;
+}
+
+%full {
+    width:100%;
+    display:block;
+}
+
+
+%joms-list {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.joms-left {
+    float: left;
+}
+
+.joms-right {
+    float: right;
+}
+
+@include media('medium') {
+.joms-inline--desktop {
+        display:inline !important;
+        width: auto !important;
+    }
+}
+
+.joms-table {
+    display: table;
+
+}
+.joms-table__col {
+    display: table-cell;
+    vertical-align: middle;
+}

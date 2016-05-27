@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <extension type="package" version="2.5">
+  <name>SimpleRegistration</name>
+	<version>3.0.0</version>
+  <creationDate>2013-08-28</creationDate>
+  <author>GiBiLogic</author>
+	<authorUrl>https://extensions.gibilogic.com</authorUrl>
+	<copyright>(C) 2012-2013 Lexity, Inc. All rights reserved.</copyright>
+  <packagename>lexity</packagename>
+  <packager>Lexity Inc.</packager>
+  <description><![CDATA[
+  <p>This package installs both SimpleRegistration component and module at once.</p>
+  ]]></description>
+  <files>
+    <file type="component" id="com_simpleregistration" >com_simpleregistration.zip</file>
+    <file type="plugin" id="module">mod_simpleregistration.zip</file>
+  </files>
+</extension>

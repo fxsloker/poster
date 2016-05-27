@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="asset_id" type="hidden" filter="unset" />
+
+		<field name="title" type="text" label="COM_FORM2CONTENT_TITLE"
+			description="COM_FORM2CONTENT_TITLE_DESC" class="inputbox" size="60" maxlength="200"
+			required="true" />
+					
+		<field name="metakey" type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC"
+			class="inputbox" rows="3" cols="30" />
+
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox" rows="3" cols="30" />
+					
+		<field name="published" type="hidden" />
+		<field name="created_by" type="hidden" />
+		<field name="created" type="hidden" />
+		<field name="modified" type="hidden" />
+		<field name="version" type="hidden" />
+		
+		<field name="rules" type="rules" label="JFIELD_RULES_LABEL"
+			translate_label="false" class="inputbox" filter="rules"
+			component="com_form2content" section="project" validate="rules"	/>		
+	</fieldset>
+	
+	<fields name="settings">
+		<field name="article_caption" type="text" label="COM_FORM2CONTENT_ARTICLE_CAPTION"
+			description="COM_FORM2CONTENT_ARTICLE_CAPTION_DESC" class="inputbox" size="100" maxlength="100"
+			 />
+	
+		<fieldset name="title" label="COM_FORM2CONTENT_TITLE" description="COM_FORM2CONTENT_TITLE">
+			<field name="title_front_end" type="radio" label="COM_FORM2CONTENT_SHOW_IN_FRONT_END" default="1" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="title_caption" type="text" label="COM_FORM2CONTENT_CAPTION" description="COM_FORM2CONTENT_CAPTION"
+				class="inputbox" size="50" maxlength="50" />
+			<field name="title_default" type="text" label="COM_FORM2CONTENT_DEFAULT_VALUE"
+				class="inputbox" size="100" maxlength="200" />			
+		</fieldset>
+		
+		<fieldset name="title_alias" label="COM_FORM2CONTENT_TITLE_ALIAS" description="COM_FORM2CONTENT_TITLE_ALIAS">
+			<field name="title_alias_front_end" type="radio" label="COM_FORM2CONTENT_SHOW_IN_FRONT_END" default="1" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="title_alias_caption" type="text" label="COM_FORM2CONTENT_CAPTION"
+				class="inputbox" size="50" maxlength="50" />
+		</fieldset>	
+		
+		<fieldset name="template" label="COM_FORM2CONTENT_TEMPLATE" description="COM_FORM2CONTENT_TEMPLATE">
+			<field name="frontend_templsel" type="radio" label="COM_FORM2CONTENT_SHOW_IN_FRONT_END" default="1" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field name="intro_template" type="F2cTemplate" label="COM_FORM2CONTENT_INTRO_TEMPLATE_DEFAULT" description="COM_FORM2CONTENT_DEFAULT_TEMPLATE_DESC"
+				size="75" />
+			<field name="main_template" type="F2cTemplate" label="COM_FORM2CONTENT_MAIN_TEMPLATE_DEFAULT" description="COM_FORM2CONTENT_DEFAULT_TEMPLATE_DESC"
+				size="75" />						
+		</fieldset>
+
+		<fieldset name="publish_dates" label="COM_FORM2CONTENT_PUBLISH_DATES" description="COM_FORM2CONTENT_PUBLISH_DATES">
+			<field name="frontend_pubsel" type="radio" label="COM_FORM2CONTENT_SHOW_IN_FRONT_END" default="1" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="tags" label="COM_FORM2CONTENT_TAGS" description="COM_FORM2CONTENT_TAGS">
+			<field name="tags_front_end" type="radio" label="COM_FORM2CONTENT_SHOW_IN_FRONT_END" default="0" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="tags_caption" type="text" label="COM_FORM2CONTENT_CAPTION" description="COM_FORM2CONTENT_CAPTION"
+				class="inputbox" size="50" maxlength="50" />
+			<field 
+				name="tag_field_ajax_mode" 
+				type="radio" 
+				class="btn-group"
+				description="COM_TAGS_TAG_FIELD_MODE_DESC"
+				label="COM_TAGS_TAG_FIELD_MODE_LABEL"
+				default="1"
+			>
+				<option value="1">COM_TAGS_TAG_FIELD_MODE_AJAX</option>
+				<option value="0">COM_TAGS_TAG_FIELD_MODE_NESTED</option>
+			</field>
+			<field name="tags_allow_custom" type="radio" label="COM_FORM2CONTENT_TAGS_ALLOW_CUSTOM" description="COM_FORM2CONTENT_TAGS_ALLOW_CUSTOM_DESC" default="1" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+				
+	</fields>
+	
+	<fields name="attribs">
+		<fieldset name="basic" label="COM_CONTENT_ATTRIBS_FIELDSET_LABEL">
+			<field
+				name="show_title" type="radio" label="JGLOBAL_SHOW_TITLE_LABEL" description="JGLOBAL_SHOW_TITLE_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="link_titles"
+				type="radio"
+				label="JGLOBAL_LINKED_TITLES_LABEL"
+				description="JGLOBAL_LINKED_TITLES_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field name="show_tags" type="radio"
+				class="btn-group"
+				label="COM_CONTENT_FIELD_SHOW_TAGS_LABEL"
+				description="COM_CONTENT_FIELD_SHOW_TAGS_DESC"
+				labelclass="control-label">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+						
+			<field name="show_intro" type="radio"
+				description="JGLOBAL_SHOW_INTRO_DESC"
+				label="JGLOBAL_SHOW_INTRO_LABEL" class="btn-group"
+				>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_category"
+				type="radio"
+				label="JGLOBAL_SHOW_CATEGORY_LABEL"
+				description="JGLOBAL_SHOW_CATEGORY_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="link_category"
+				type="radio"
+				label="JGLOBAL_LINK_CATEGORY_LABEL"
+				description="JGLOBAL_LINK_CATEGORY_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JNO</option>
+				<option	value="1">JYES</option>
+			</field>
+
+			<field
+				name="show_parent_category"
+				type="radio"
+				label="JGLOBAL_SHOW_PARENT_CATEGORY_LABEL"
+				description="JGLOBAL_SHOW_PARENT_CATEGORY_DESC" class="btn-group">
+				<option	value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="link_parent_category"
+				type="radio"
+				label="JGLOBAL_LINK_PARENT_CATEGORY_LABEL"
+				description="JGLOBAL_LINK_PARENT_CATEGORY_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JNO</option>
+				<option	value="1">JYES</option>
+			</field>
+
+			<field
+				name="show_author"
+				type="radio"
+				label="JGLOBAL_SHOW_AUTHOR_LABEL"
+				description="JGLOBAL_SHOW_AUTHOR_DESC" class="btn-group">
+				<option	value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="link_author"
+				type="radio"
+				label="JGLOBAL_LINK_AUTHOR_LABEL"
+				description="JGLOBAL_LINK_AUTHOR_DESC" class="btn-group">
+				<option	value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JNO</option>
+				<option	value="1">JYES</option>
+			</field>
+
+			<field
+				name="show_create_date"
+				type="radio"
+				label="JGLOBAL_SHOW_CREATE_DATE_LABEL"
+				description="JGLOBAL_SHOW_CREATE_DATE_DESC" class="btn-group">
+				<option	value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_modify_date"
+				type="radio"
+				label="JGLOBAL_SHOW_MODIFY_DATE_LABEL"
+				description="JGLOBAL_SHOW_MODIFY_DATE_DESC" class="btn-group">
+				<option	value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_publish_date"
+				type="radio"
+				label="JGLOBAL_SHOW_PUBLISH_DATE_LABEL"
+				description="JGLOBAL_SHOW_PUBLISH_DATE_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_item_navigation"
+				type="radio"
+				label="JGLOBAL_SHOW_NAVIGATION_LABEL"
+				description="JGLOBAL_SHOW_NAVIGATION_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_icons"
+				type="radio"
+				label="JGLOBAL_SHOW_ICONS_LABEL"
+				description="JGLOBAL_SHOW_ICONS_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_print_icon"
+				type="radio"
+				label="JGLOBAL_SHOW_PRINT_ICON_LABEL"
+				description="JGLOBAL_SHOW_PRINT_ICON_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="show_email_icon"
+				type="radio"
+				label="JGLOBAL_SHOW_EMAIL_ICON_LABEL"
+				description="JGLOBAL_SHOW_EMAIL_ICON_DESC" class="btn-group">
+				<option	value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+			<field
+				name="show_vote"
+				type="radio"
+				label="JGLOBAL_SHOW_VOTE_LABEL"
+				description="JGLOBAL_SHOW_VOTE_DESC" class="btn-group">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+			<field
+				name="show_hits"
+				type="radio"
+				label="JGLOBAL_SHOW_HITS_LABEL"
+				description="JGLOBAL_SHOW_HITS_DESC" class="btn-group">
+				<option	value="">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>
+			
+			<field
+				name="show_noauth"
+				type="radio"
+				label="JGLOBAL_SHOW_UNAUTH_LINKS_LABEL"
+				description="JGLOBAL_SHOW_UNAUTH_LINKS_DESC" class="btn-group">
+						<option value="">JGLOBAL_USE_GLOBAL</option>
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+			</field>
+		
+			<field name="spacer2" type="spacer" hr="true"/>
+			
+			<field name="alternative_readmore" type="inputbox"
+				label="JFIELD_READMORE_LABEL" 
+				description="JFIELD_READMORE_DESC"
+				class="inputbox" size="25" />
+
+			<field name="article_layout" type="componentlayout" 
+				label="JFIELD_ALT_LAYOUT_LABEL"
+				description="JFIELD_ALT_COMPONENT_LAYOUT_DESC"
+				useglobal="true"
+				extension="com_content" view="article" />
+		</fieldset>
+	</fields>
+		
+	<fields name="images">
+		<field
+			name="image_intro"
+			type="sql"
+			label="COM_FORM2CONTENT_FIELD_INTRO_LABEL"
+			description="COM_FORM2CONTENT_FIELD_INTRO_DESC"
+			query="SELECT id, fieldname FROM #__f2c_projectfields WHERE fieldtypeid = 6 AND projectid = %d ORDER BY fieldname ASC"
+			key_field="id" 
+			value_field="fieldname"
+			default="">
+				<option value="">COM_FORM2CONTENT_NONE</option>
+			 </field>
+			 
+		<field
+			name="imagetype_intro"
+			type="list"
+			label="COM_FORM2CONTENT_IMAGETYPE_LABEL"
+			description="COM_FORM2CONTENT_IMAGETYPE_DESC">
+				<option value="full">COM_FORM2CONTENT_FULL_IMAGE</option>
+				<option value="thumb">COM_FORM2CONTENT_THUMBNAIL</option>
+		</field>				
+		<field
+			name="float_intro"
+			type="list"
+			label="COM_FORM2CONTENT_FLOAT_LABEL"
+			description="COM_FORM2CONTENT_FLOAT_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="right">COM_FORM2CONTENT_RIGHT</option>
+				<option value="left">COM_FORM2CONTENT_LEFT</option>
+				<option value="none">COM_FORM2CONTENT_NONE</option>
+		</field>
+		<field name="image_intro_alt"
+			type="text"
+			label="COM_FORM2CONTENT_FIELD_IMAGE_ALT_LABEL"
+			description="COM_FORM2CONTENT_FIELD_IMAGE_ALT_DESC"
+			class="inputbox"
+			size="20" />
+		<field name="image_intro_caption"
+			type="text"
+			label="COM_FORM2CONTENT_FIELD_IMAGE_CAPTION_LABEL"
+			description="COM_FORM2CONTENT_FIELD_IMAGE_CAPTION_DESC"
+			class="inputbox"
+			size="20" />
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true"
+			/>
+		<field
+			name="image_fulltext"
+			type="sql"
+			label="COM_FORM2CONTENT_FIELD_FULL_LABEL"
+			description="COM_FORM2CONTENT_FIELD_FULL_DESC"
+			query="SELECT id, fieldname FROM #__f2c_projectfields WHERE fieldtypeid = 6 AND projectid = %d ORDER BY fieldname ASC"
+			key_field="id" 
+			value_field="fieldname"
+			default="">
+				<option value="">COM_FORM2CONTENT_NONE</option>
+			 </field>				
+		<field
+			name="imagetype_fulltext"
+			type="list"
+			label="COM_FORM2CONTENT_IMAGETYPE_LABEL"
+			description="COM_FORM2CONTENT_IMAGETYPE_DESC">
+				<option value="full">COM_FORM2CONTENT_FULL_IMAGE</option>
+				<option value="thumb">COM_FORM2CONTENT_THUMBNAIL</option>
+		</field>				
+		<field
+			name="float_fulltext"
+			type="list"
+			label="COM_FORM2CONTENT_FLOAT_LABEL"
+			description="COM_FORM2CONTENT_FLOAT_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="right">COM_FORM2CONTENT_RIGHT</option>
+				<option value="left">COM_FORM2CONTENT_LEFT</option>
+				<option value="none">COM_FORM2CONTENT_NONE</option>
+		</field>
+		<field name="image_fulltext_alt"
+			type="text"
+			label="COM_FORM2CONTENT_FIELD_IMAGE_ALT_LABEL"
+			description="COM_FORM2CONTENT_FIELD_IMAGE_ALT_DESC"
+			class="inputbox"
+			size="20" />
+		<field name="image_fulltext_caption"
+			type="text"
+			label="COM_FORM2CONTENT_FIELD_IMAGE_CAPTION_LABEL"
+			description="COM_FORM2CONTENT_FIELD_IMAGE_CAPTION_DESC"
+			class="inputbox"
+			size="20" />
+	</fields>
+	
+	<fields name="urls">
+		<field
+			name="urla"
+			type="sql"
+			label="COM_FORM2CONTENT_FIELD_URLA_LABEL"
+			description="COM_FORM2CONTENT_FIELD_URL_DESC"
+			query="SELECT id, fieldname FROM #__f2c_projectfields WHERE fieldtypeid = 9 AND projectid = %d ORDER BY fieldname ASC"
+			key_field="id" 
+			value_field="fieldname"
+			default="">
+				<option value="">COM_FORM2CONTENT_NONE</option>
+			 </field>				
+		<field name="urlatext"
+			type="text"
+			label="COM_FORM2CONTENT_FIELD_URLA_LINK_TEXT_LABEL"
+			description="COM_FORM2CONTENT_FIELD_URL_LINK_TEXT_DESC"
+			class="inputbox"
+			size="20" />
+		<field
+			name="targeta"
+			type="list"
+			label="COM_FORM2CONTENT_URL_FIELD_BROWSERNAV_LABEL"
+			description="COM_FORM2CONTENT_URL_FIELD_BROWSERNAV_DESC"
+			default=""
+			filter="options"
+			class="inputbox">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JBROWSERTARGET_PARENT</option>
+			<option value="1">JBROWSERTARGET_NEW</option>
+			<option value="2">JBROWSERTARGET_POPUP</option>
+			<option value="3">JBROWSERTARGET_MODAL</option>
+		</field>
+		<field
+			name="spacer4"
+			type="spacer"
+			hr="true"
+			/>
+		<field
+			name="urlb"
+			type="sql"
+			label="COM_FORM2CONTENT_FIELD_URLB_LABEL"
+			description="COM_FORM2CONTENT_FIELD_URL_DESC"
+			query="SELECT id, fieldname FROM #__f2c_projectfields WHERE fieldtypeid = 9 AND projectid = %d ORDER BY fieldname ASC"
+			key_field="id" 
+			value_field="fieldname"
+			default="">
+				<option value="">COM_FORM2CONTENT_NONE</option>
+			 </field>				
+		<field name="urlbtext"
+			type="text"
+			label="COM_FORM2CONTENT_FIELD_URLB_LINK_TEXT_LABEL"
+			description="COM_FORM2CONTENT_FIELD_URL_LINK_TEXT_DESC"
+			class="inputbox"
+			size="20" />
+		<field
+			name="targetb"
+			type="list"
+			label="COM_FORM2CONTENT_URL_FIELD_BROWSERNAV_LABEL"
+			description="COM_FORM2CONTENT_URL_FIELD_BROWSERNAV_DESC"
+			default=""
+			filter="options"
+			class="inputbox">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JBROWSERTARGET_PARENT</option>
+				<option value="1">JBROWSERTARGET_NEW</option>
+				<option value="2">JBROWSERTARGET_POPUP</option>
+				<option value="3">JBROWSERTARGET_MODAL</option>
+		</field>
+		<field
+			name="spacer5"
+			type="spacer"
+			hr="true"
+			/>
+		<field
+			name="urlc"
+			type="sql"
+			label="COM_FORM2CONTENT_FIELD_URLC_LABEL"
+			description="COM_FORM2CONTENT_FIELD_URL_DESC"
+			query="SELECT id, fieldname FROM #__f2c_projectfields WHERE fieldtypeid = 9 AND projectid = %d ORDER BY fieldname ASC"
+			key_field="id" 
+			value_field="fieldname"
+			default="">
+				<option value="">COM_FORM2CONTENT_NONE</option>
+			 </field>				
+		<field
+			name="urlctext"
+			type="text"
+			label="COM_FORM2CONTENT_FIELD_URLC_LINK_TEXT_LABEL"
+			description="COM_FORM2CONTENT_FIELD_URL_LINK_TEXT_DESC"
+			class="inputbox"
+			size="20" />
+		<field
+			name="targetc"
+			type="list"
+			label="COM_FORM2CONTENT_URL_FIELD_BROWSERNAV_LABEL"
+			description="COM_FORM2CONTENT_URL_FIELD_BROWSERNAV_DESC"
+			default=""
+			filter="options"
+			class="inputbox">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JBROWSERTARGET_PARENT</option>
+				<option value="1">JBROWSERTARGET_NEW</option>
+				<option value="2">JBROWSERTARGET_POPUP</option>
+				<option value="3">JBROWSERTARGET_MODAL</option>
+		</field>
+	</fields>
+		
+	<fields name="metadata">
+		<field name="robots"
+			type="list"
+			label="JFIELD_METADATA_ROBOTS_LABEL"
+			description="JFIELD_METADATA_ROBOTS_DESC"
+		>
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+			<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+			<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+			<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+		</field>
+
+		<field name="author" type="text"
+			label="JAUTHOR" description="JFIELD_METADATA_AUTHOR_DESC"
+			size="20" />
+
+		<field name="rights" type="textarea" label="JFIELD_META_RIGHTS_LABEL"
+			description="JFIELD_META_RIGHTS_DESC" required="" filter="string"
+			cols="30" rows="2" />
+		<field name="xreference" type="text"
+			label="COM_FORM2CONTENT_FIELD_XREFERENCE_LABEL" description="COM_FORM2CONTENT_FIELD_XREFERENCE_DESC"
+			class="inputbox" size="20" />
+	</fields>
+</form>	

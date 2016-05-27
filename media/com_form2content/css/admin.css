@@ -1,0 +1,7 @@
+.f2cicon-large {font-size: 1.2em;}
+a.centerlink {display: block; margin: 0 auto; text-align: center;}
+
+.gcd_width, .gcd_height, .img_maxwidth, .img_maxheight, .img_thumbwidth, .img_thumbheight, .mlt_numrows, .mlt_numcols, .mlt_maxnumchars, .slt_size, .slt_maxlength
+{
+	width: 40px;
+}

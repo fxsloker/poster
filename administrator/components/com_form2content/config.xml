@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="general" label="COM_FORM2CONTENT_GENERAL_SETTINGS" description="COM_FORM2CONTENT_GENERAL_SETTINGS_DESC">
+		<field name="generate_sample_template" type="radio" default="1" class="btn-group"
+		label="COM_FORM2CONTENT_GENERATE_DEFAULT_TEMPLATE" description="COM_FORM2CONTENT_GENERATE_DEFAULT_TEMPLATE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		<field name="max_image_upload_size"	type="text"
+			default="" maxlength="8" size="15"
+			label="COM_FORM2CONTENT_MAX_IMAGE_UPLOAD_SIZE" description="COM_FORM2CONTENT_MAX_IMAGE_UPLOAD_SIZE_DESC">
+		</field>
+		<field name="jpeg_quality" type="text"
+			default="75" maxlength="3" size="5"
+			label="COM_FORM2CONTENT_JPEG_QUALITY" description="COM_FORM2CONTENT_JPEG_QUALITY_DESC">
+		</field>
+		<field name="date_format" type="list" default="%d-%m-%Y"
+			description="COM_FORM2CONTENT_DATE_FORMAT_DESC"	label="COM_FORM2CONTENT_DATE_FORMAT">
+			<option value="%d-%m-%Y">d-m-Y</option>
+			<option value="%m-%d-%Y">m-d-Y</option>
+			<option value="%Y-%m-%d">Y-m-d</option>
+		</field>
+		<field name="autosync_article_order" type="radio" default="0" class="btn-group"
+			label="COM_FORM2CONTENT_AUTOSYNC_ARTICLE_ORDER" description="COM_FORM2CONTENT_AUTOSYNC_ARTICLE_ORDER_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>		
+		<field name="enable_logging" type="radio" default="0" class="btn-group"
+			label="COM_FORM2CONTENT_ENABLE_LOGGING" description="COM_FORM2CONTENT_ENABLE_LOGGING_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>					
+	</fieldset>
+	<fieldset name="frontend" label="COM_FORM2CONTENT_FRONTEND_SETTINGS" description="COM_FORM2CONTENT_FRONTEND_SETTINGS_DESC">
+		<field name="edit_items_level" type="list"
+			description="COM_FORM2CONTENT_EDIT_ITEMS_BY_USER_DESC"
+			label="COM_FORM2CONTENT_EDIT_ITEMS_BY_USER" default="0">
+			<option value="0">COM_FORM2CONTENT_ALL_ITEMS</option>
+			<option value="1">COM_FORM2CONTENT_OWN_ITEMS_ONLY</option>
+		</field>
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox" validate="rules" filter="rules" component="com_form2content" section="component" />
+	</fieldset>
+</config>

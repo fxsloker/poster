@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+   	<layout title="COM_FORM2CONTENT_FORMS_VIEW_DEFAULT_TITLE" option="COM_FORM2CONTENT_FORMS_VIEW_DEFAULT_OPTION">
+    	<message><![CDATA[COM_FORM2CONTENT_FORMS_VIEW_DEFAULT_DESC]]></message>
+   	</layout>
+	<fields name="params">
+	        <fieldset name="basic" addfieldpath="/administrator/components/com_form2content/models/fields">	        
+	                <field name="contenttypeid" type="f2ccontenttype" published="1"
+	                        label="COM_FORM2CONTENT_CONTENTTYPE_FILTER"
+	                        description="COM_FORM2CONTENT_CONTENTTYPE_FILTER_DESC"
+	                        default="0">
+	                        <option value="0">COM_FORM2CONTENT_SHOW_ALL_CONTENT_TYPES</option>
+	                </field>
+	                <field name="classic_layout" type="radio" label="COM_FORM2CONTENT_CLASSIC_LAYOUT"
+	                        description="COM_FORM2CONTENT_CLASSIC_LAYOUT_DESC" default="0" class="btn-group">
+	                        <option value="0">JNO</option>
+	                        <option value="1">JYES</option>
+	                </field>
+	                
+	        </fieldset>
+	</fields>
+</metadata>

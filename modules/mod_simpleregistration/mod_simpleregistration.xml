@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+    <name>Simple Registration</name>
+    <version>3.0.1</version>
+    <creationDate>2013-09-03</creationDate>
+    <author>GiBiLogic</author>
+    <authorEmail>info@gibilogic.com</authorEmail>
+    <authorUrl>http://www.gibilogic..com</authorUrl>
+    <copyright>Copyright (C) 2011-2013 GiBiLogic. All rights reserved</copyright>
+    <license>GNU GPL v2 or later</license>
+    <description><![CDATA[
+		<img src='http://extensions.gibilogic.com/images/gibilogicextensions-150x150.png' alt='' style='float: left;margin: 0 10px 10px 0' />
+		<h1>GiBi Simpleregistration</h1>
+		<h2>A Joomla extension by <a href="http://www.gibilogic.com">GiBiLogic</a></h2>
+		<p>This module allows user to register by inserting only an e-mail address: it will be used both as "Full name" and "Username"; password will be created randomly and sent to the user.</p>
+		<p>Discover other extension by <strong>GiBiLogic</strong> at <a href="http://extensions.gibilogic.com">extensions.gibilogic.com</a></p>
+	]]></description>
+    <files>
+        <filename module="mod_simpleregistration">mod_simpleregistration.php</filename>
+        <folder>tmpl</folder>
+    </files>
+</extension>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="file"
+	version="1.2.3"
+	client="site"
+	method="upgrade"
+	>
+    <name>[ru-RU] JomSocial Russian language Pack</name>
+	<creationDate>November 2015</creationDate>
+    <author>Nelegal</author>
+    <copyright>Nelegal</copyright>
+    <license>http://www.gnu.org/licenses GNU/GPL</license>
+    <authorUrl></authorUrl>
+    <version>4.1.0</version>
+    <description>
+		<![CDATA[
+	<div class="bs-docs-example">
+<h4 class="alert-heading">ABOUT JOMSOCIAL FULL RUSSIAN TRANSLATION:</h4>
+ <br/> Этот перевод не создан "с нуля". Этот перевод - мерж переводов нескольких авторов, которых, к сожалению, я не знаю. 
+ <br/>Здесь присутствует небольшая часть фраз Kharol'а, часть взята из файлов с Transifex и большая часть перевода моя.
+ <br/>Я не претендую на авторство и авторские права сего перевода (что в принципе на мой взгляд невозможно) и открыто и безвозмездно передаю его сообществу, НО...
+ <br/>
+ <br/>Почти 3500 строк было перебрано вручную, исправлено, дополнено и вычитано.
+ <br/>Всё это было оттестировано на демо-стенде на предмет стилистических ошибок и правильности применения в контексте, согласно правилам русского языка.
+ <br/>Я уверен, что не все было исправлено и доведено до состояния полной готовности, поэтому дальнейшее развитие перевода напрямую зависит от Вас!
+ <br/>Я, в свою очередь, по результатам Ваших отзывов обещаю продолжать работу над переводом.
+ <br/>
+ <br/>На текущий момент работа над переводом идет по причине внедрения модуля в свой проект, но я готов продолжить работу над ним и дальше.
+ <br/>Не скрою, что стимула для работы могло бы добавить Ваше финансовое участие.
+ <br/>Поэтому без тени смущения оставлю здесь реквизиты для желающих сказать "Спасибо".
+ <br/>
+ <br/>WM: R438506102625
+ <br/>ЯД: 4100142137915
+ <hr>
+ Version: 4.1.0 13 November 2015
+ <br/> 
+ <br/> <b>Tranlated by Алексей aka "Nelegal" | Especially for cmsheaven.org members</b>
+ <br/> 
+ <br/> 
+
+<div class="alert alert-success">
+<h4 class="alert-heading">В комплект перевода входят следующие файлы локализации:</h4>
+ <br/> » Перевод административной части JomSocial (backend)
+ <br/> » Перевод фронтальной части JomSocial (frontend)
+ <br/> » Перевод языковых файлов модулей JomSocial
+ <br/> » Перевод языковых файлов плагинов JomSocial 
+ </div>
+</div>
+]]></description>
+	<fileset>
+		<files folder="admin" target="administrator/language/ru-RU">
+		<filename>ru-RU.community.sys.ini</filename>
+		<filename>ru-RU.com_community.ini</filename>
+		<filename>ru-RU.com_community.menu.ini</filename>
+		<filename>ru-RU.com_community.sys.ini</filename>
+		<filename>ru-RU.plg_community_events.ini</filename>
+		<filename>ru-RU.plg_community_events.sys.ini</filename>
+		<filename>ru-RU.plg_community_feeds.ini</filename>
+		<filename>ru-RU.plg_community_feeds.sys.ini</filename>
+		<filename>ru-RU.plg_community_friendslocation.ini</filename>
+		<filename>ru-RU.plg_community_friendslocation.sys.ini</filename>
+		<filename>ru-RU.plg_community_input.ini</filename>
+		<filename>ru-RU.plg_community_input.sys.ini</filename>
+		<filename>ru-RU.plg_community_invite.ini</filename>
+		<filename>ru-RU.plg_community_invite.sys.ini</filename>
+		<filename>ru-RU.plg_community_kunena.ini</filename>
+		<filename>ru-RU.plg_community_kunena.sys.ini</filename>
+		<filename>ru-RU.plg_community_latestphoto.ini</filename>
+		<filename>ru-RU.plg_community_latestphoto.sys.ini</filename>
+		<filename>ru-RU.plg_community_myarticles.ini</filename>
+		<filename>ru-RU.plg_community_myarticles.sys.ini</filename>
+		<filename>ru-RU.plg_community_mycontacts.ini</filename>
+		<filename>ru-RU.plg_community_mycontacts.sys.ini</filename>
+		<filename>ru-RU.plg_community_mygoogleads.ini</filename>
+		<filename>ru-RU.plg_community_mygoogleads.sys.ini</filename>
+		<filename>ru-RU.plg_community_mytaggedvideos.ini</filename>
+		<filename>ru-RU.plg_community_mytaggedvideos.sys.ini</filename>
+		<filename>ru-RU.plg_community_myvideos.ini</filename>
+		<filename>ru-RU.plg_community_myvideos.sys.ini</filename>
+		<filename>ru-RU.plg_community_twitter.ini</filename>
+		<filename>ru-RU.plg_community_twitter.sys.ini</filename>
+		<filename>ru-RU.plg_community_walls.ini</filename>
+		<filename>ru-RU.plg_community_walls.sys.ini</filename>
+		<filename>ru-RU.plg_community_wordfilter.ini</filename>
+		<filename>ru-RU.plg_community_wordfilter.sys.ini</filename>
+		<filename>ru-RU.plg_system_jomsocialconnect.ini</filename>
+		<filename>ru-RU.plg_system_jomsocialconnect.sys.ini</filename>
+		<filename>ru-RU.plg_system_jomsocialredirect.ini</filename>
+		<filename>ru-RU.plg_system_jomsocialupdate.ini</filename>
+		<filename>ru-RU.plg_system_jomsocialupdate.sys.ini</filename>
+		<filename>ru-RU.plg_user_jomsocialuser.ini</filename>
+		<filename>ru-RU.plg_user_jomsocialuser.sys.ini</filename>
+		</files>
+		<files folder="site" target="language/ru-RU">
+		<filename>ru-RU.com_community.ini</filename>
+		<filename>ru-RU.mod_activegroups.ini</filename>
+		<filename>ru-RU.mod_datingsearch.ini</filename>
+		<filename>ru-RU.mod_hellome.ini</filename>
+		<filename>ru-RU.mod_latestdiscussion.ini</filename>
+		<filename>ru-RU.mod_latestgrouppost.ini</filename>
+		<filename>ru-RU.mod_latestgrouppost.sys.ini</filename>
+		<filename>ru-RU.mod_notify.ini</filename>
+		<filename>ru-RU.mod_photocomments.ini</filename>
+		<filename>ru-RU.mod_statistics.ini</filename>
+		<filename>ru-RU.mod_topmembers.ini</filename>
+		<filename>ru-RU.mod_videocomments.ini</filename>
+		</files>
+	</fileset>
+</extension>

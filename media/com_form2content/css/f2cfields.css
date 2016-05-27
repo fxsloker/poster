@@ -1,0 +1,16 @@
+div.f2c_field input, 
+div.f2c_field textarea,
+div.f2c_field select,
+div.f2c_field button
+{
+	float: none;
+    margin: 2px 2px 2px 0;
+    width: auto;	
+}
+
+div.f2c_field img
+{
+	float: none;
+    margin: 0;
+    width: auto;	
+}

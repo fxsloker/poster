@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+			
+		<field name="projectid" type="hidden" />
+		
+		<field name="fieldname" type="text" label="COM_FORM2CONTENT_CONTENTTYPEFIELD_FIELDNAME"
+			description="COM_FORM2CONTENT_CONTENTTYPEFIELD_FIELDNAME_DESC" class="inputbox" size="60" maxlength="200"
+			required="false" />
+			
+		<field name="title" type="text" label="COM_FORM2CONTENT_CONTENTTYPEFIELD_TITLE"
+			description="COM_FORM2CONTENT_CONTENTTYPEFIELD_TITLE_DESC" class="inputbox" size="60" maxlength="200"
+			required="false" />
+			
+		<field name="description" type="text" label="COM_FORM2CONTENT_CONTENTTYPEFIELD_DESCRIPTION"
+			description="COM_FORM2CONTENT_CONTENTTYPEFIELD_DESCRIPTION_DESC" class="inputbox" size="60" maxlength="200" />
+			
+		<field name="frontvisible" type="radio" label="COM_FORM2CONTENT_SHOW_IN_FRONT_END" default="1" class="btn-group">
+			<option	value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="fieldtypeid" type="F2cContentTypeFieldType" label="COM_FORM2CONTENT_FIELDTYPE" onchange="fieldTypeChanged(this.value);" />
+		
+		<field name="ordering" type="text" label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC" class="inputbox" size="6" default="0" />		
+	</fieldset>	
+	<fieldset name="settings">	
+		<fields name="settings">
+			<field name="inf_text" type="editor" class="inputbox" label="COM_FORM2CONTENT_TEXT" 
+				description="" filter="" buttons="false" width="500" />
+		</fields>		
+	</fieldset>		
+</form>

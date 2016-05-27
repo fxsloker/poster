@@ -1,0 +1,6 @@
+.joms-app--myarticle li {
+	margin-bottom: 14px;
+}
+.joms-app--myarticle li:last-child {
+	margin-bottom: 0;
+}

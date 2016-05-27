@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Login">
+		<message>
+			<![CDATA[
+				Login view
+			]]>
+		</message>
+		<options var="task">
+		    <option value="showLogin" name="Войти" msg="Войти пользователю" />
+		</options>
+	</view>
+	<state>
+		<name>Login Layout</name>
+		<description>Displays the login form</description>
+	</state>
+</metadata>

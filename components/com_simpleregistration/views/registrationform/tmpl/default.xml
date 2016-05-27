@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="SIMPLEREGISTRATION_FORM">
+		<message>
+			<![CDATA[SIMPLEREGISTRATION_FORM_DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>SIMPLEREGISTRATION_FORM</name>
+		<description>SIMPLEREGISTRATION_FORM_DESC</description>
+	</state>
+</metadata>
